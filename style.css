@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  color: forestgreen;
+  padding-left: 5dvh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#head--title {
+  font-size: 25pt;
+}
+
+#contact--information {
+  display: inline-block;
+  font-size: 15pt;;
+}
+
+#blink {
+  margin-inline: 1em;
+  border-left: 1px solid #228b22;
+  height: 2ch;
+  display: inline;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    border-left: 1px solid #228b22ff;
+  }
+  to {
+    border-left: 1px solid #228b2200;
+  }
+}
